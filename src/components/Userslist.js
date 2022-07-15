@@ -7,6 +7,7 @@ import {
   Card,
   Stack,
   AppBar,
+  Skeleton
 } from "@mui/material";
 import mav from "../imgs/mav.png";
 
@@ -46,9 +47,40 @@ export default function Userslist() {
               );
             })
           ) : users.message === "loading" ? (
-            <Typography variant="h5" align="center" sx={{ mt:4 }}>
-              Loading...
-            </Typography>
+          <Stack spacing={2} sx={{px:2}}>
+            <Box sx={{display:"flex",py:1,px:2}}>
+            <Skeleton variant="circular" width={40} height={40} sx={{mr:2}} />
+            <Skeleton variant="text" sx={{width:"100%"}}/>
+            </Box>
+            <Box sx={{display:"flex",py:1,px:2}}>
+            <Skeleton variant="circular" width={40} height={40} sx={{mr:2}} />
+            <Skeleton variant="text" sx={{width:"100%"}}/>
+            </Box>
+            <Box sx={{display:"flex",py:1,px:2}}>
+            <Skeleton variant="circular" width={40} height={40} sx={{mr:2}} />
+            <Skeleton variant="text" sx={{width:"100%"}}/>
+            </Box>
+            <Box sx={{display:"flex",py:1,px:2}}>
+            <Skeleton variant="circular" width={40} height={40} sx={{mr:2}} />
+            <Skeleton variant="text" sx={{width:"100%"}}/>
+            </Box>
+            <Box sx={{display:"flex",py:1,px:2}}>
+            <Skeleton variant="circular" width={40} height={40} sx={{mr:2}} />
+            <Skeleton variant="text" sx={{width:"100%"}}/>
+            </Box>
+            <Box sx={{display:"flex",py:1,px:2}}>
+            <Skeleton variant="circular" width={40} height={40} sx={{mr:2}} />
+            <Skeleton variant="text" sx={{width:"100%"}}/>
+            </Box>
+            <Box sx={{display:"flex",py:1,px:2}}>
+            <Skeleton variant="circular" width={40} height={40} sx={{mr:2}} />
+            <Skeleton variant="text" sx={{width:"100%"}}/>
+            </Box>
+            <Box sx={{display:"flex",py:1,px:2}}>
+            <Skeleton variant="circular" width={40} height={40} sx={{mr:2}} />
+            <Skeleton variant="text" sx={{width:"100%"}}/>
+            </Box>
+          </Stack>
           ) : users.messages === "error" ? (
             <Typography variant="h5" align="center" sx={{ mt:4 }}>
               No Users Found...
