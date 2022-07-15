@@ -1,24 +1,24 @@
-import UsersState from "./contexts/UsersState";
-import Userslist from "./components/Userslist";
-import Userprofile from "./components/Userprofile";
-import { Grid } from "@mui/material";
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
-    <UsersState>
-      <Grid
-        container
-        spacing={0}
-        sx={{ height: "100vh" }}
-      >
-        <Grid item xs={12} md={5} sx={{ height: "100%" }}>
-          <Userslist />
-        </Grid>
-        <Grid item xs={12} md={7}>
-          <Userprofile />
-        </Grid>
-      </Grid>
-    </UsersState>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
